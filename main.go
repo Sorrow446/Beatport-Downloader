@@ -772,7 +772,7 @@ func main() {
 				continue
 			}
 			fmt.Printf(
-				"Downloading track %d of %d: %s - AAC256\n", trackNum, trackTotal, titleWithMixName,
+				"Downloading track %d of %d: %s - AAC 256\n", trackNum, trackTotal, titleWithMixName,
 			)
 			streamUrl, err := getTrackStreamUrl(trackId, _url, trackMeta.SampleEndMs)
 			if err != nil {
