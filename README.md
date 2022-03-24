@@ -1,7 +1,7 @@
 # Beatport-Downloader
 Beatport downloader written in Go.
 ![](https://i.imgur.com/T91aKEi.png)
-[Windows, Linux and macOS binaries](https://github.com/Sorrow446/Beatport-Downloader/releases)
+[Windows, Linux, macOS and Android binaries](https://github.com/Sorrow446/Beatport-Downloader/releases)
 
 # Setup
 Active LINK or LINK Pro subscription required.    
