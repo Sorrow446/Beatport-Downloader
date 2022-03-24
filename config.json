@@ -1,0 +1,10 @@
+{
+    "email": "",
+    "password": "",
+    "outPath": "Beatport downloads",
+    "albumTemplate": "{{.albumArtist}} - {{.album}}",
+    "trackTemplate": "{{.trackPad}}. {{.title}}",
+    "maxCover": true,
+    "omitOrigMix": false,
+    "keepCover": false
+}
