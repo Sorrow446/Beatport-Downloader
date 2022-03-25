@@ -12,7 +12,7 @@ Configure any other options if needed.
 |email|Email address.
 |password|Password.
 |outPath|Where to download to. Path will be made if it doesn't already exist.
-|albumTemplate|Album folder naming template. Vars: album, albumArtist, upc, year.
+|albumTemplate|Album folder naming template. Vars: album, albumArtist, catalogNumber, upc, year.
 |trackTemplate|Track filename naming template. Vars: album, albumArtist, artist, bpm, genre, isrc, title, track, trackPad, trackTotal, year.
 |maxCover|true = max cover size, false = 600x600.
 |omitOrigMix|Omit mix type from track filenames and tags if it's an original mix.
