@@ -26,7 +26,7 @@ Termux `pkg install ffmpeg`
 # Usage
 Args take priority over the same config file options.
 
-Download two albums with config file format:   
+Download two albums:   
 `bp_dl_x64.exe https://www.beatport.com/release/ghost-hardware-ep/63030 https://www.beatport.com/release/kindred/872666`
 
 Download a single album and from two text files:   
