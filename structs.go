@@ -18,7 +18,7 @@ type Args struct {
 	Urls          []string `arg:"positional, required"`
 	OutPath       string   `arg:"-o" help:"Where to download to. Path will be made if it doesn't already exist."`
 	MaxCover      bool     `arg:"-m" help:"true = max cover size, false = 600x600."`
-	AlbumTemplate string   `arg:"-a" help:"Album folder naming template. Vars: album, albumArtist, upc, year."`
+	AlbumTemplate string   `arg:"-a" help:"Album folder naming template. Vars: album, albumArtist, catalogNumber, upc, year."`
 	TrackTemplate string   `arg:"-t" help:"Track filename naming template. Vars: album, albumArtist, artist, bpm, genre, isrc, title, track, trackPad, trackTotal, year."`
 }
 

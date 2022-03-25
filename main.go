@@ -334,9 +334,10 @@ func parseArtists(artists []Artist) string {
 
 func parseAlbumMeta(meta *AlbumMeta) map[string]string {
 	parsedMeta := map[string]string{
-		"album":       meta.Name,
-		"albumArtist": parseArtists(meta.Artists),
-		"year":        meta.PublishDate[:4],
+		"album":         meta.Name,
+		"albumArtist":   parseArtists(meta.Artists),
+		"catalogNumber": meta.CatalogNumber,
+		"year":          meta.PublishDate[:4],
 	}
 	upc := meta.Upc
 	if upc != nil {
