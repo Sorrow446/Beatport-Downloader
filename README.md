@@ -49,7 +49,7 @@ Options:
                          Where to download to. Path will be made if it doesn't already exist.
   --maxcover, -m         true = max cover size, false = 600x600.
   --albumtemplate ALBUMTEMPLATE, -a ALBUMTEMPLATE
-                         Album folder naming template. Vars: album, albumArtist, upc, year.
+                         Album folder naming template. Vars: album, albumArtist, catalogNumber, upc, year.
   --tracktemplate TRACKTEMPLATE, -t TRACKTEMPLATE
                          Track filename naming template. Vars: album, albumArtist, artist, bpm, genre, isrc, title, track, trackPad, trackTotal, year.
   --help, -h             display this help and exit
