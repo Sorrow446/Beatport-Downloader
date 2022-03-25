@@ -358,10 +358,14 @@ func parseTrackMeta(meta *TrackMeta, albMeta map[string]string, trackNum, trackT
 	}
 	mixName := meta.MixName
 	titleWithMixName := meta.Name + " (" + mixName + ")"
-	if omit && mixName != "Original Mix" {
-		albMeta["title"] = titleWithMixName
+	if omit {
+		if mixName != "Original Mix" {
+			albMeta["title"] = titleWithMixName
+		} else {
+			albMeta["title"] = meta.Name
+		}
 	} else {
-		albMeta["title"] = meta.Name
+		albMeta["title"] = titleWithMixName
 	}
 	return albMeta, titleWithMixName
 }
@@ -748,10 +752,6 @@ func main() {
 			trackMeta, err := getTrackMeta(trackId, _url)
 			if err != nil {
 				handleErr("Failed to get track metadata.", err, false)
-				continue
-			}
-			if !trackMeta.IsAvailableForStreaming {
-				fmt.Println("Track is unavailable for streaming.")
 				continue
 			}
 			parsedMeta, titleWithMixName := parseTrackMeta(trackMeta, parsedAlbMeta, trackNum, trackTotal, cfg.OmitOrigMix)
